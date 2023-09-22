@@ -1,6 +1,20 @@
 const { question } = require("readline-sync");
 const process = require('process');
 
+this.questions = {q: 1, a: 11}
+//this.questions1 = [q, q, q]
+//this.questions2 = [a, a, a]
+this.questions3 = [{q: 1, a: 11}], [{q: 1, a: 11}]
+
+//class allqa {
+//    constructor (theme, q, a)
+//    this.theme=this.theme
+//}
+//
+//class q extends allqa {
+//    returns [qqq]
+//}
+
 
 class Template {
     constructor (this.questions, theme) {
@@ -11,7 +25,7 @@ class Template {
 getQ() {
     let aque = [];
     for (let i=0; i<aque; i+=1) {
-        aque.push(this.questions.q);
+        aque.push(this.questions[i]);
     }
     return aque
 }
@@ -35,3 +49,4 @@ if (answers===this.aque[i]) {
 }
 
 q3: jbdjklwdenln
+
