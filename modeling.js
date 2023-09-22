@@ -8,7 +8,6 @@ const gg = new View('./enoti.txt');
 const asd = new View('./foxes.txt')
 const arvvv = new View('./wolfs.txt')
 
-
 class ViewInConsole {
     constructor() {
       this.dataProg = gg.getTxtfile();
@@ -16,8 +15,19 @@ class ViewInConsole {
       this.qwe = arvvv.getTxtfile();
     }
 
+    prompt.start()
+    console.log(" `\nВыбери тему:
+    1.  ${'Еноты'}
+    2.  ${'Лисы'}
+    3.  ${'Волки'}
+    4.  Завершить игру
+    `");
+    
+  const result = prompt.get((err, res)=> {return res});
+ 
 
-async getFrConsloe() {
+async getFrConsloe(themeNumber) {
+
     prompt.start();
 
     const table = {
