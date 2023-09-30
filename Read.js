@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path');
 const { question } = require('readline-sync');
 
-
+// test
 class View{
     constructor(txt){
         this.txt = txt
@@ -23,5 +23,5 @@ this.questions.push({
 return this.questions
 }
 }
-
+// test
 module.exports = View
